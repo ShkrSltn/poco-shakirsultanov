@@ -1,29 +1,23 @@
-/* Reset some default styles for the page */
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    /* Ensure body covers the full height of the viewport */
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .wrapper {
+    flex: 1;
 
-    border: 1px solid red;
-    padding: 50px;
-    /* Make the wrapper fill the remaining vertical space */
+}
+
+.content {
+    padding: 20px;
 }
 
 .footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-    border: 1px solid rgb(168, 255, 148);
+    padding: 10px;
+    margin-top: auto;
 }
-
-p {}

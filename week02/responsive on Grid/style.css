@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1 auto;
+    border: 10px solid black;
+
+}
+
+header {
+    background-color: blue;
+}
+
+main {
+    background-color: green;
+}
+
+footer {
+    background-color: red;
+}

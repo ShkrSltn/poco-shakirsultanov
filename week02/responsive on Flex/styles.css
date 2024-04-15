@@ -1,19 +1,140 @@
-body {
-    display: flex;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap');
+
+html {
+    font-family: "Harmattan", sans-serif;
 }
 
-h2 {}
 
-section {
-    border: 1px solid red;
+body {
+    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 header {
+    order: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 25%;
+    /* 25% высоты body */
+    background-color: #B2D6FF;
+    color: #fff;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Занимает оставшуюся высоту body */
+}
+
+.flexed {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+#features {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+}
+
+#feature {
+    flex-grow: 1;
+    /* Равномерно распределяет ширину между дочерними элементами */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+#feature:nth-child(1) {
+    background-color: #F5CE8D;
+}
+
+#feature:nth-child(2) {
+    background-color: #C8C6FA;
+}
+
+#feature:nth-child(3) {
+    background-color: #F09A9D;
+}
+
+#signup {
+    order: 2;
+    height: 15%;
+    /* 15% высоты main */
+    background-color: #D6E8FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+#content {
+    order: 3;
+    flex-grow: 1;
+    /* 25% высоты main */
+    background-color: #EAEDF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+@media (max-width: 767px) {
+
+
+    #signup {
+        order: 2;
+    }
+
+    #content {
+        order: 0;
+    }
+
+    #features {
+        flex-direction: column;
+        order: 3;
+    }
+
+    .flexed {
+        order: 3;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    #content {
+        order: 1;
+    }
+
+    #features {
+        order: 3;
+    }
+
+    #signup {
+        order: 2;
+        height: 50%;
+        border: 1px solid green;
+    }
+
+    #feature {
+        border: 1px solid blue;
+        height: 100%;
+    }
+
+    .flexed {
+        order: 3;
+        border: 1px solid green;
+    }
+
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navig">
+                <li class="hamburger"><a href="javascript:void(0);" class="icon" onclick="myFunction()" href="#"><i
+                            class="fa fa-bars"></i></a></li>
+                <li class="hide"><a href="#">Home</a></li>
+                <li class="hide"><a href="#">About</a></li>
+                <li class="hide"><a href="#">Work</a></li>
+                <li class="hide"><a href="#">Blog</a></li>
+                <li class="hide"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <script>
+            function myFunction() {
+                var x = document.getElementsByClassName("hide");
+                var elements = document.getElementsByClassName("hide");
+
+                // Loop through each element with the class "hide"
+                for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+
+                    // Check the current display style of the element
+                    if (element.style.display === "block" || element.style.display === "") {
+                        // If it's currently visible (or default), hide it
+                        element.style.display = "none";
+                    } else {
+                        // If it's currently hidden, show it
+                        element.style.display = "block";
+                    }
+                }
+            }
+
+        </script>
+    </header>
+</body>
+
+</html>

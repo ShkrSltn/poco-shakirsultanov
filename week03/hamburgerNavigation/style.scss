@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+body {
+}
+
+header {
+    width: 100%;
+    background-color: #d2e6f2;
+
+    nav {
+        width: 100%;
+        height: fit-content;
+
+        ul {
+            height: 100%;
+            list-style-type: none; /* Убираем маркеры списка */
+            padding: 0; /* Убираем отступы вокруг списка */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2.5em;
+
+            li a {
+                color: #3e3e3e;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 728px) {
+    header {
+        height: fit-content;
+    }
+    header nav ul {
+        height: fit-content;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    header nav ul .hide {
+        display: none;
+    }
+}

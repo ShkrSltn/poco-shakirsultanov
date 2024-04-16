@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #d3d3d3;
+  width: 100%; /* Set width to 100% of the parent container */
+  max-width: 1120px; /* Set maximum width for responsiveness */ /* Add padding inside the container */
+  box-sizing: border-box;
+  margin: 0 auto;
+  /* Include padding in the width */
+  /* Set background color */
+}
+
+/* Styles for the main container within the wrapper */
+main {
+  height: -moz-fit-content;
+  height: fit-content; /* Set height to 100% of the viewport height */
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 40px 0;
+}
+
+h1 {
+  text-align: center;
+  color: RGBA(0, 0, 0, 0.5);
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+
+strong {
+  color: black;
+}
+
+ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3.7em;
+  grid-row-gap: 3.7em;
+  padding: 2em;
+  margin: 2em;
+}
+ul h2 {
+  color: RGBA(0, 0, 0, 0.5);
+}
+ul li {
+  list-style-type: none;
+  text-align: center;
+}
+ul img {
+  width: 100%;
+}
+ul p {
+  font-size: 1.2em;
+  line-height: 1.45;
+}
+
+@media only screen and (max-width: 640px) {
+  ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */

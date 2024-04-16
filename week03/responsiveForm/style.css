@@ -1,0 +1,195 @@
+@charset "UTF-8";
+* {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%; /* Ширина обертки равна ширине экрана */
+  max-width: 930px; /* Максимальная ширина обертки */
+  margin: 0 auto; /* Автоматическое выравнивание по центру */
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+main {
+  width: 100%; /* Ширина контейнера равна ширине обертки */
+  padding: 20px; /* Внутренние отступы для контейнера */
+  background-color: #ffffff; /* Цвет фона контейнера */
+  border: 1px solid #dddddd;
+}
+
+form {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+form label {
+  color: #8a8b8e;
+}
+
+fieldset {
+  position: relative;
+  padding: 40px 10px 10px 10px;
+  border: none;
+  border-top: 3px solid rgb(25, 25, 25);
+}
+
+legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+input {
+  border: none;
+  border-bottom: 0.5px solid gray;
+  background: transparent;
+  padding: 5px;
+}
+
+input::-moz-placeholder {
+  font-style: italic;
+  color: #b9b9b9;
+}
+
+input::placeholder {
+  font-style: italic;
+  color: #b9b9b9;
+}
+
+.personliche {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 40px 40px 40px 40px;
+  gap: 10px;
+}
+
+.kontaktdaten {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px;
+  gap: 10px;
+}
+
+.addressdaten {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
+  gap: 10px;
+}
+
+.radios,
+.trios {
+  height: 100%;
+}
+.radios label,
+.trios label {
+  height: 100%;
+}
+.radios input,
+.trios input {
+  height: 100%;
+}
+
+.radios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+.radios input {
+  margin-right: 8px;
+}
+
+.trios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type=radio] {
+  border: none;
+  display: none;
+}
+
+input:required::-moz-placeholder {
+  color: red;
+}
+
+input:required::placeholder {
+  color: red;
+}
+
+.radio-item {
+  position: relative;
+  display: inline-block;
+  font-size: 16px; /* Размер шрифта для текста внутри радио кнопки */
+  line-height: 1; /* Одинаковая высота строки для текста и радио кнопки */
+  cursor: pointer;
+  padding-left: 45%;
+  padding-top: 5px; /* Отступ слева для учёта псевдоэлемента */
+}
+
+/* Создание квадратного визуального элемента радио кнопки */
+.radiomark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /*Размерстороныквадрата*/
+  height: 100%;
+  /*Размерстороныквадрата*/
+  border: 0.5px solid gray;
+  background-color: transparent;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+input[type=radio]:checked + .radiomark::after {
+  content: ""; /* Пустой псевдоэлемент, который будет заполнен при выборе */
+  display: block;
+  width: 100%; /* Размер маркера внутри квадрата */
+  height: 3px; /* Размер маркера внутри квадрата */
+  background-color: #bd1500; /* Цвет маркера */
+  color: #bd1500;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+input[type=submit] {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  position: absolute;
+  cursor: pointer;
+  background-color: #bd1500;
+  color: white;
+  width: 15em;
+  height: 4em;
+  padding: 5px;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+input[type=submit]:hover {
+  color: #bd1500;
+  border: 3px solid #bd1500;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */

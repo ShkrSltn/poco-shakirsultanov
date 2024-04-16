@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Profil</h1>
+        <h2>Hier können Sie Ihre Adress-Angaben einsehen und anpassen.</h2>
+        <form action="#">
+            <fieldset class="personliche">
+                <legend>Persönliche Daten</legend>
+
+                <label for="titel">Titel</label>
+                <input type="text" placeholder="optional" name="titel" id="titel">
+
+                <label for="vorname">Vorname</label>
+                <input type="text" placeholder="required" name="vorname" id="vorname" required>
+
+                <label for="nachname">Nachname</label>
+                <input type="text" placeholder="required" name="nachname" id="nachname" required>
+
+
+                <label>Geschlecht</label>
+                <div class="radios">
+                    <label class="radio-item">M
+                        <input type="radio" name="geschlecht" value="M" id="male" checked>
+                        <span class="radiomark"></span>
+                    </label>
+
+                    <label class="radio-item">W
+                        <input type="radio" name="geschlecht" value="W" id="female">
+                        <span class="radiomark"></span>
+                    </label>
+                </div>
+
+                <label>Sprache</label>
+                <div class="trios">
+
+                    <label class="radio-item">DE
+                        <input type="radio" name="sprache" value="DE" id="de" checked>
+                        <span class="radiomark"></span>
+                    </label>
+
+                    <label class="radio-item">FR
+                        <input type="radio" name="sprache" value="FR" id="fr">
+                        <span class="radiomark"></span>
+                    </label>
+
+                    <label class="radio-item">IT
+                        <input type="radio" name="sprache" value="IT" id="it">
+                        <span class="radiomark"></span>
+                    </label>
+
+                </div>
+            </fieldset>
+
+            <fieldset class="kontaktdaten">
+                <legend>Kontaktdaten</legend>
+
+                <label for="tel">Telefon</label>
+                <input type="tel" placeholder="required" name="tel" id="tel" required>
+
+                <label for="mobile">Mobile</label>
+                <input type="tel" placeholder="optional" name="mobile" id="mobile">
+
+                <label for="haupt">Hauptnummer</label>
+                <input type="tel" placeholder="optional" name="haupt" id="haupt">
+
+                <label for="fax">Fax</label>
+                <input type="number" placeholder="optional" name="fax" id="fax">
+
+                <label for="email1">Mail 1</label>
+                <input type="email" placeholder="required" name="email1" id="email1" required>
+
+                <label for="email2">Mail 2</label>
+                <input type="email" placeholder="optional" name="email2" id="email2">
+            </fieldset>
+
+
+            <fieldset class="addressdaten">
+                <legend>Adressdaten</legend>
+
+                <label for="haupt">Firma</label>
+                <input type="text" placeholder="required" name="firma" id="firma" required>
+
+                <label for="zfirma">Zusatz Firma</label>
+                <input type="text" name="zfirma" placeholder="optional" id="zfirma">
+
+                <label for="homepage">Homepage</label>
+                <input type="text" name="homepage" placeholder="optional" id="homepage">
+
+                <label for="addresse">Adresse / Haus Nr</label>
+                <div class="radios">
+                    <input type="text" placeholder="required" name="addresse" id="addresse" required>
+                    <input type="number" placeholder="required" name="hausnr" id="hausnr" required>
+                </div>
+
+                <label for="zaddresse">Zusatz Adresse</label>
+                <input type="text" name="zaddresse" placeholder="optional" id="zaddresse">
+
+                <label for="postfach">Postfach</label>
+                <input type="number" name="postfach" placeholder="optional" id="postfach">
+
+                <label for="plz">PLZ / Ort</label>
+                <div class="radios">
+                    <input type="number" placeholder="required" name="plz" id="plz" required>
+                    <input type="text" placeholder="required" name="ort" id="ort" required>
+                </div>
+
+                <label for="kanton">Kanton / Land</label>
+                <div class="radios">
+                    <input type="text" name="kanton" placeholder="optional" id="kanton">
+                    <input type="text" name="land" placeholder="optional" id="land">
+                </div>
+            </fieldset>
+            <input type="submit" value="Speichern">
+
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,3 +1,10 @@
+function substractMinMax(arr) {
+
+    let sArr = bubbleSort(arr);
+    return sArr[sArr.length - 1] - arr[0];
+
+}
+
 function bubbleSort(arr) {
 
     const arrLength = arr.length - 1;
@@ -15,11 +22,6 @@ function bubbleSort(arr) {
     return arr;
 }
 
-
-let array = [];
-for (let i = 0; i < 1000; i++) {
-    array.push(Math.floor(Math.random() * 2001) - 1000);
-}
-
-console.log(bubbleSort(array));
-
+let inputedNumbers = [5, 8, 1, -2, 7, 2, 2, 31, -13, 112];
+console.log("Our array", inputedNumbers, "\n");
+console.log("Subtraction of the smallest element and the biggest", substractMinMax(inputedNumbers));

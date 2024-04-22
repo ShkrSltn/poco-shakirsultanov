@@ -1,4 +1,4 @@
-let person = prompt("Please enter your name");
+const person = prompt("Please enter your name");
 
 if (person !== null) {
     console.log(`Hi ${person}! Welcome to the this world!`);

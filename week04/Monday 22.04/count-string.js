@@ -9,4 +9,4 @@ if (inputStr !== null) {
         }
     }
 }
-console.log("Quantity of the charachters", quantityOfChar);
+console.log("Quantity of the characters", quantityOfChar);

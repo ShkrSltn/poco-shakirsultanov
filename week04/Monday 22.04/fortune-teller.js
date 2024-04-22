@@ -53,5 +53,4 @@ else if (randomChildren == 1) {
 else {
     fortune += " kids.";
 }
-
 console.log(fortune);

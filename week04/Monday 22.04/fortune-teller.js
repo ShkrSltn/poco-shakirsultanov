@@ -9,7 +9,7 @@ function randomGet(min, max) {
 
 let numberOfChildren, partnersName, geographicLocation, jobTitle;
 
-numberOfChildren = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+numberOfChildren = [0, 1, 2, 3, 4, 5, 6];
 partnersName = ["Evelyn", "Marcus", "Stella", "Nathan", "Zoe", "Lucas", "Olivia", "Derek", "Maya", "Xavier"];
 countries = [
     "United States",
@@ -42,8 +42,16 @@ const randomName = partnersName[randomGet(0, partnersName.length)];
 const randomChildren = numberOfChildren[randomGet(0, numberOfChildren.length)];
 
 
+let fortune = `You will be a ${randomJob} in ${randomCountry}, and married to ${randomName} and will have ${randomChildren}`;
 
-
-const fortune = `You will be a ${randomJob} in ${randomCountry}, and married to ${randomName} and will have ${randomChildren} kids.`;
+if (randomChildren == 0) {
+    fortune += " no kids.";
+}
+else if (randomChildren == 1) {
+    fortune += " kid.";
+}
+else {
+    fortune += " kids.";
+}
 
 console.log(fortune);

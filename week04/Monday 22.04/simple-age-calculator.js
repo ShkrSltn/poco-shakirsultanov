@@ -1,16 +1,18 @@
 //const prompt = require('prompt-sync')();
 
 function ageCalculator() {
-    /*  const birthYear = prompt("--- Enter your birth year\n");
+    /*
+    const birthYear = prompt("--- Enter your birth year\n");
      const month = (prompt("--- Enter your birth month\n"));
      const day = (prompt("--- Enter your birth day\n"));
- 
+
      const fYear = prompt("--- Enter future year\n");
      const fMonth = (prompt("--- Enter future month\n"));
      const fDay = (prompt("--- Enter future day\n")); */
 
     const birthDate = prompt(`--- Enter birth date din format like : "31.03.2000" \n`);
     const futureDate = prompt(`--- Enter future date din format like : "25.07.2039"\n`);
+
 
     let bDateParts = birthDate.split(".");
     let fDateParts = futureDate.split(".");
@@ -51,8 +53,6 @@ function ageCalculator() {
     }
 }
 
-ageCalculator();
-
 
 function isLeapYear(year) {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
@@ -81,3 +81,7 @@ function checkDate(day, month, year) {
 
     return true;
 }
+
+
+
+ageCalculator();

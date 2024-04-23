@@ -1,15 +1,28 @@
 //const prompt = require('prompt-sync')();
 
 function ageCalculator() {
-    const birthYear = prompt("--- Enter your birth year\n");
-    const month = (prompt("--- Enter your birth month\n"));
-    const day = (prompt("--- Enter your birth day\n"));
+    /*  const birthYear = prompt("--- Enter your birth year\n");
+     const month = (prompt("--- Enter your birth month\n"));
+     const day = (prompt("--- Enter your birth day\n"));
+ 
+     const fYear = prompt("--- Enter future year\n");
+     const fMonth = (prompt("--- Enter future month\n"));
+     const fDay = (prompt("--- Enter future day\n")); */
 
-    const fYear = prompt("--- Enter future year\n");
-    const fMonth = (prompt("--- Enter future month\n"));
-    const fDay = (prompt("--- Enter future day\n"));
+    const birthDate = prompt(`--- Enter birth date din format like : "31.03.2000" \n`);
+    const futureDate = prompt(`--- Enter future date din format like : "25.07.2039"\n`);
 
-    /*     const birthYear = 2000;
+    let bDateParts = birthDate.split(".");
+    let fDateParts = futureDate.split(".");
+
+    let day = parseInt(bDateParts[0]);
+    let month = parseInt(bDateParts[1]);;
+    let birthYear = parseInt(bDateParts[2]);;
+
+    const fDay = parseInt(fDateParts[0]);
+    const fMonth = parseInt(fDateParts[1]);
+    const fYear = parseInt(fDateParts[2]);
+    /*  const birthYear = 2000;
         const month = 3;
         const day = 31;
     

@@ -1,0 +1,11 @@
+prompt("current age")
+declare the current_age variable and save value from prompt, like current_age = prompt("current age)
+prompt("retirement age")
+declare the retirement_age variable and save value from prompt, like retirement_age = prompt("retirement age)
+    calculate how many year until retirement
+declare current_year and give the value of current date using included in programming language date library
+    calculate the year when we will be retired
+Display the:
+    "You have <years_left> years left until retirement."
+     "You can retire in <retirement_year>."
+

@@ -1,0 +1,10 @@
+
+Retirement calculator Constraints {
+   1)Inputed ages must be bigger than 0
+   2)My age must be smaller than the retirement age
+   3)Difference between my age and the retirement age must be bigger than 0
+   4)
+ }
+
+ 
+   

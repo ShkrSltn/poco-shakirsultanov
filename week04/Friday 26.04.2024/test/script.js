@@ -1,0 +1,1 @@
+document.querySelector('strong:not(#red)').textContent = 'Hello, Oerlikon!';

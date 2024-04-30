@@ -24,6 +24,7 @@ function ageCalculator() {
     const fDay = parseInt(fDateParts[0]);
     const fMonth = parseInt(fDateParts[1]);
     const fYear = parseInt(fDateParts[2]);
+
     /*  const birthYear = 2000;
         const month = 3;
         const day = 31;

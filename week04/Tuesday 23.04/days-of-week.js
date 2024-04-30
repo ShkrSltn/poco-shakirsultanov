@@ -61,7 +61,7 @@ while (continueTheLoop) {
     }
 
 }
-console.log("You are exit the translator");
+console.log("End of the program");
 
 
 

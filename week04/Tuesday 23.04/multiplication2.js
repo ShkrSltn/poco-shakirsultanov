@@ -1,6 +1,6 @@
 function multiplicate(number) {
 
-    return number * 9;
+    return number * 9; //returning the result of multiplication
 }
 /* let gNumber = prompt("Input number\n");
 console.log(`${gNumber} * 9 = ${multiplicate(gNumber)}`); */

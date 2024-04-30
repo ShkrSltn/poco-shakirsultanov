@@ -13,7 +13,7 @@ function isLeapYear(year) {
 const year = 2024;
 const daysInYear = returnDaysByLeapYear(year);
 
-console.log(`${year} have ${daysInYear} days in year.`);
+//console.log(`${year} have ${daysInYear} days in year.`);
 
 
 const readline = require('readline');
@@ -82,7 +82,7 @@ async function main() {
     else {
         console.log(`Inputed date ${day}.${month}.${year}`);
         const dayNumber = whatDayIs(day, month, year);
-        console.log(`День в году:${dayNumber}`)
+        console.log(`Day in the year:${dayNumber}`)
     }
 
 }
